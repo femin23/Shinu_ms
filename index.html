@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shinu M. S. | Author & Storyteller</title>
+  <meta name="description"
+    content="Discover Shinu M. S., author of Jahanna: The Rise of Martha. Explore themes of faith, fear, and stories that stay with you.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Pinyon+Script&family=Caveat:wght@400;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Atmospheric Dark Fantasy Blood Particles Overlay -->
+  <canvas id="bloodCanvas" class="blood-particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- ==================== HEADER / NAVIGATION ==================== -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <a href="#hero" class="brand-logo">SHINU M. S.</a>
+
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#featured" class="nav-link">Jahanna 1</a></li>
+          <li><a href="#jahanna2" class="nav-link">Jahanna 2</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#author-note" class="nav-link">Author's Note</a></li>
+          <li><a href="#era-universe" class="nav-link">Era Universe</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="mailto:shinuvjmd@gmail.com" class="icon-btn" aria-label="Email Shinu M. S.">
+          <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/shinu.ms_?utm_source=ig_web_button_share_sheet&cplk=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="icon-btn"
+          aria-label="Instagram">
+          <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/share/1DfbTvHVUc/" target="_blank" rel="noopener noreferrer" class="icon-btn"
+          aria-label="Facebook">
+          <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+          </svg>
+        </a>
+        <span class="icon-sep">|</span>
+        <button class="icon-btn search-trigger" id="searchTrigger" aria-label="Search">
+          <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Hamburger -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== SECTION 1: HERO (CINEMATIC VIDEO BACKGROUND) ==================== -->
+    <section class="hero-section" id="hero">
+      <!-- Background Video with Seamless Cinematic Overlay -->
+      <div class="hero-video-wrapper">
+        <video class="hero-bg-video" autoplay muted loop playsinline preload="auto" poster="UI BG/hero_video_frame_0.jpg">
+          <source src="UI BG/Hero Video.mp4" type="video/mp4">
+        </video>
+        <!-- Atmospheric Blending Overlay -->
+        <div class="hero-video-overlay"></div>
+      </div>
+
+      <div class="hero-container">
+        <!-- Left Vertical Indicator Rail -->
+        <aside class="hero-rail-left">
+          <div class="rail-numbers">
+            <span class="rail-num active">01</span>
+            <span class="rail-num">02</span>
+            <span class="rail-num">03</span>
+          </div>
+          <div class="rail-vertical-text">
+            <span>SOME STORIES</span>
+            <span>REFUSE</span>
+            <span>TO DIE.</span>
+          </div>
+        </aside>
+
+        <!-- Center Content Over the Video -->
+        <div class="hero-center-content">
+          <div class="hero-eyebrow-container">
+            <span class="hero-eyebrow-tag">THE ERA UNIVERSE</span>
+            <span class="eyebrow-line crimson-line"></span>
+          </div>
+
+          <h1 class="hero-center-name">Shinu&nbsp;M.&nbsp;S.</h1>
+          <p class="hero-center-byline">Author of Jahanna Series</p>
+
+          <div class="hero-btn-group hero-center-btns">
+            <a href="#featured" class="btn btn-crimson" id="btnExploreBook">
+              <span>EXPLORE THE BOOKS</span>
+              <span class="btn-arrow">→</span>
+            </a>
+            <a href="#about" class="btn btn-outline" id="btnAboutAuthor">
+              <span>ABOUT THE AUTHOR</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Vertical Indicator Rail -->
+        <aside class="hero-rail-right">
+          <div class="rail-vertical-text-right">
+            <span>SOME</span>
+            <span>STORIES</span>
+            <span>REFUSE</span>
+            <span>TO DIE</span>
+          </div>
+          <div class="vertical-dash"></div>
+        </aside>
+      </div>
+
+      <!-- Ambient Scroll Down Indicator -->
+      <a href="#featured" class="hero-scroll-indicator" aria-label="Scroll to featured book">
+        <span class="scroll-mouse-pill">
+          <span class="scroll-wheel-dot"></span>
+        </span>
+        <span class="scroll-label-text">SCROLL TO DISCOVER</span>
+      </a>
+    </section>
+
+    <!-- ==================== SECTION 2: FEATURED BOOK (DARK) ==================== -->
+    <section class="featured-section" id="featured">
+      <div class="featured-container">
+        <!-- Left Side: Content -->
+        <div class="featured-content">
+          <div class="eyebrow-container">
+            <span class="eyebrow-text">FEATURED BOOK</span>
+            <span class="eyebrow-line crimson-line"></span>
+          </div>
+
+          <h2 class="featured-title">JAHANNA</h2>
+          <h3 class="featured-subtitle">— THE RISE OF MARTHA —</h3>
+
+          <p class="featured-tagline">
+            <em>A dark fantasy where faith, fear, and evil intertwine.</em>
+          </p>
+
+          <p class="featured-desc">
+            A devil who descended upon Earth 1,200 years after Christ. A devoted worshipper who became the first to praise him on this soil. And a forbidden book that holds the power to turn its keeper into something far more sinister than a man.
+          </p>
+
+          <!-- Devil's Proclamation Quote Box -->
+          <div class="devil-proclamation-box">
+            <span class="proclamation-lead">After gifting his worshipper a book inscribed with their shared history and deeds, the Devil proclaimed:</span>
+            <blockquote class="proclamation-quote">
+              “<strong>The birthplace of all sins is this book.<br>
+              He who possesses it shall become wealthy.<br>
+              He who worships it shall become renowned.<br>
+              But he who wields its power shall become the Devil himself.</strong>”
+            </blockquote>
+          </div>
+
+          <p class="featured-punchline">
+            <strong>Every rise has a secret. Every secret has a price.</strong>
+          </p>
+
+          <p class="featured-theme-closing">
+            <em>JAHANNA — Where faith becomes obsession, and evil finds its scripture.</em>
+          </p>
+
+          <div class="featured-action">
+            <a href="https://www.bookbangtheory.co.in/product/jahanna-the-rise-of-martha-pre-booking/" target="_blank" rel="noopener noreferrer"
+              class="btn btn-crimson" id="btnBuyJahanna1">
+              <span>BUY NOW</span>
+              <span class="btn-arrow-diag">↗</span>
+            </a>
+            <a href="https://www.storytel.com/tv/books/jahanna-12840825" target="_blank" rel="noopener noreferrer"
+              class="btn btn-outline" id="btnListenJahanna1">
+              <span>LISTEN NOW</span>
+              <span class="btn-arrow-diag">↗</span>
+            </a>
+            <button class="btn btn-outline" id="btnFeaturedExplore">
+              <span>EXPLORE DETAILS</span>
+              <span class="btn-arrow">→</span>
+            </button>
+            <a href="https://www.goodreads.com" target="_blank" rel="noopener noreferrer"
+              class="btn-text-link" id="btnGoodreads">
+              <span>Goodreads ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Side: Floating Book Mockup (Top on Mobile) -->
+        <div class="featured-visual">
+          <div class="book-floating-wrapper featured-book-floating" id="featuredBookWrapper">
+            <img src="UI BG/Jahanna_ The Rise of Martha Book Mockup.png"
+              alt="Jahanna: The Rise of Martha - Book Mockup by Shinu M. S."
+              class="floating-book-image featured-book-img" id="featuredBookImg">
+            <a href="#featured" class="featured-book-hotspot" id="btnFeaturedHotspot"
+              aria-label="Explore Jahanna: The Rise of Martha"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 2B: JAHANNA 2: LIFE OF EVIL ==================== -->
+    <section class="featured-section book2-section" id="jahanna2">
+      <div class="book2-container">
+        <!-- Left Side: Floating Book Mockup (Desktop Left / Mobile Top) -->
+        <div class="book2-visual">
+          <div class="book-floating-wrapper book2-floating-wrapper" id="book2FloatingWrapper">
+            <img src="UI BG/Jahanna – Life of Evil_ Gothic Book Cover.png"
+              alt="Jahanna 2: Life of Evil - Gothic Book Cover Mockup by Shinu M. S."
+              class="floating-book-image book2-floating-img" id="book2CoverImg">
+            <a href="#jahanna2" class="book2-book-hotspot" id="btnBook2Hotspot"
+              aria-label="Explore Jahanna 2: Life of Evil"></a>
+          </div>
+        </div>
+
+        <!-- Right Side: Content -->
+        <div class="book2-content">
+          <div class="eyebrow-container">
+            <span class="eyebrow-text">THE ERA UNIVERSE • BOOK II</span>
+            <span class="eyebrow-line crimson-line"></span>
+          </div>
+
+          <div class="book2-badge-row">
+            <span class="book-badge-crimson">
+              <span class="blood-pulse-dot"></span>
+              NEW CHRONICLE
+            </span>
+            <span class="book-badge-universe">ERA UNIVERSE SAGA</span>
+          </div>
+
+          <h2 class="featured-title book2-title">JAHANNA 2</h2>
+          <h3 class="featured-subtitle book2-subtitle">— LIFE OF EVIL —</h3>
+
+          <p class="book2-tagline">
+            <em>When ancient evil awakens, even faith becomes a weapon.</em>
+          </p>
+
+          <p class="featured-desc book2-desc">
+            Following the monumental events of <em>The Rise of Martha</em>, an ancient corruption buried beneath the roots of the Era Universe begins its reckoning.
+          </p>
+
+          <p class="featured-desc book2-desc">
+            In <em>Jahanna 2: Life of Evil</em>, the boundaries between faith and fanaticism, justice and vengeance, and salvation and damnation begin to crumble. As long-buried secrets rise from the depths of history, ancient forces awaken, loyalties fracture, and the consequences of forgotten sins threaten to consume everything in their path.
+          </p>
+
+          <p class="featured-desc book2-desc">
+            In a world where belief can become a curse and righteousness can conceal the darkest intentions, the struggle between good and evil is no longer a battle fought on opposing sides. It is a war within the very souls of those who dare to shape destiny.
+          </p>
+
+          <p class="featured-desc book2-desc">
+            Dark, haunting, and relentless, <em>Jahanna 2: Life of Evil</em> expands the mythology of the Era Universe into a terrifying exploration of corruption, betrayal, faith, and vengeance — where every revelation carries a price, and every choice brings the world closer to its reckoning.
+          </p>
+
+          <p class="featured-punchline book2-punchline">
+            <strong>Evil is not always born in darkness. Sometimes, it is what survives the light.</strong>
+          </p>
+
+          <div class="featured-action book2-action-group">
+            <button class="btn btn-crimson" id="btnExploreBook2">
+              <span>EXPLORE BOOK II</span>
+              <span class="btn-arrow">→</span>
+            </button>
+            <a href="https://wa.me/918848392959?text=Hello%20Shinu%2C%20I%20would%20like%20to%20pre-order%20a%20copy%20of%20Jahanna%202%3A%20Life%20of%20Evil." target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-ctc-whatsapp" id="btnPreOrderBook2">
+              <span class="ctc-pulse-beacon" aria-hidden="true"></span>
+              <span>PRE-ORDER COPY</span>
+              <span class="btn-arrow-diag">↗</span>
+            </a>
+            <a href="https://www.goodreads.com" target="_blank" rel="noopener noreferrer"
+              class="btn-text-link" id="btnGoodreads2">
+              <span>View on Goodreads ↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 3: ABOUT THE AUTHOR ==================== -->
+    <section class="about-section" id="about">
+      <div class="about-container">
+        <!-- Left: Author Portrait Card -->
+        <div class="about-visual">
+          <img src="UI BG/Auther Profile picture.png" alt="Shinu M. S. author portrait" class="author-portrait-image">
+        </div>
+
+        <!-- Center: Text Content -->
+        <div class="about-content">
+          <div class="eyebrow-container">
+            <span class="eyebrow-line-left"></span>
+            <span class="eyebrow-text">ABOUT THE AUTHOR</span>
+          </div>
+
+          <h2 class="about-title">
+            The Mind Behind<br>
+            <span class="text-crimson">the Stories.</span>
+          </h2>
+
+          <div class="about-text-body">
+            <p>
+              Shinu M. S. is the author of Jahanna: The Rise of Martha, a work from the Era Universe.
+            </p>
+            <p>
+              Through his writing, he explores themes of faith, fear and the unseen, inviting readers into stories that
+              linger long after the last page.
+            </p>
+          </div>
+
+          <div class="about-action">
+            <button class="btn btn-outline" id="btnKnowMore">
+              <span>KNOW MORE</span>
+              <span class="btn-arrow">→</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right: Branch Art Space (Rendered by UI BG) -->
+        <div class="about-aside" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 3B: A NOTE FROM THE AUTHOR ==================== -->
+    <section class="author-note-section" id="author-note">
+      <div class="author-note-container">
+        <!-- Section Header -->
+        <div class="author-note-header">
+          <div class="eyebrow-container">
+            <span class="eyebrow-line crimson-line"></span>
+            <span class="eyebrow-text">REFLECTIONS & ORIGINS</span>
+            <span class="eyebrow-line crimson-line"></span>
+          </div>
+          <h2 class="author-note-title">A Note from the Author</h2>
+          <div class="author-note-byline">— SHINU M. S. —</div>
+        </div>
+
+        <!-- Manuscript Card -->
+        <div class="author-note-card">
+          <div class="author-note-body">
+            <p class="author-note-lead">
+              What if there were a hell on Earth? What if that hell had a few sinners guarding it? What if they all had a different story to tell about justice? Jahanna was born from these wild thoughts.
+            </p>
+
+            <p>
+              The book, which I initially began writing under the name <em>Parvathi</em> five years ago, eventually transformed into <em>Jahanna</em>. Behind that transformation lies a long story of support and collaboration.
+            </p>
+
+            <p>
+              From the friends who listened to my ideas and encouraged me when I first put them on paper, to the publisher who helped refine those ideas and bring them to life, and the <strong>M Universe</strong>, which brought Jahanna into a shared universe alongside the <em>Kanthamala Charitham</em> trilogy and the <em>Justice</em> series — this journey has been filled with many wonderful people. My heartfelt love and gratitude to every one of them.
+            </p>
+
+            <p>
+              <em>Jahanna</em> is an experiment: an attempt to tell a story not about heroes, but solely about sinners. I have tried my best to do justice to the ideas, the words, the book, and its readers.
+            </p>
+
+            <p class="author-note-closing">
+              With the hope that <em>Jahanna</em> will satisfy you, I invite you to join me on this journey into the hell that exists on Earth.
+            </p>
+
+            <!-- Handwritten Author Sign-off -->
+            <div class="author-note-signoff">
+              <span class="signoff-salutation">With love,</span>
+              <span class="signoff-author">Shinu M. S.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 4: A WRITER'S BELIEF (DARK BANNER) ==================== -->
+    <section class="belief-section" id="belief">
+      <div class="belief-container">
+        <span class="belief-eyebrow">A WRITER'S BELIEF</span>
+        <h2 class="belief-quote">
+          “Sin is just a word for those<br>
+          who care only about <span class="text-glow-crimson">ultimate pleasure.”</span>
+        </h2>
+        <div class="belief-accent-line">
+          <span class="blood-droplet"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 4.5: ERA UNIVERSE ==================== -->
+    <section class="era-universe-section" id="era-universe">
+      <!-- Veiled World Map Background with Gothic Cartographic Overlay -->
+      <div class="era-map-backdrop" aria-hidden="true">
+        <div class="era-map-img"></div>
+        <div class="era-map-overlay"></div>
+      </div>
+
+      <div class="container era-universe-container">
+        <!-- Header -->
+        <div class="era-universe-header">
+          <span class="eyebrow-text">SHARED LITERARY UNIVERSE</span>
+          <h2 class="section-title era-title">ERA UNIVERSE</h2>
+          <p class="era-subtitle">One Universe. Countless Stories. A Shared Destiny.</p>
+          <div class="author-note-divider" aria-hidden="true">
+            <span class="cross-icon"></span>
+          </div>
+        </div>
+
+        <!-- Main Card -->
+        <div class="era-universe-card">
+          <div class="era-card-glow" aria-hidden="true"></div>
+          <div class="era-watermark" aria-hidden="true">ERA</div>
+
+          <div class="era-card-content">
+            <p class="era-lead">
+              <strong>Era Universe</strong> is a pioneering shared fictional universe in Malayalam literature, bringing together multiple writers to build one interconnected world of stories, characters, and mysteries.
+            </p>
+
+            <p class="era-text">
+              Breaking away from the boundaries of traditional standalone novels, Era Universe introduces a collaborative storytelling experience where each author contributes a distinct narrative while remaining part of a larger, unified universe. Characters cross paths, events intertwine, hidden connections emerge, and mysteries unfold across different stories, gradually revealing a much bigger picture.
+            </p>
+
+            <div class="era-genre-tags">
+              <span class="era-genre-tag"><span class="era-tag-dot"></span>Fantasy</span>
+              <span class="era-genre-tag"><span class="era-tag-dot"></span>Horror</span>
+              <span class="era-genre-tag"><span class="era-tag-dot"></span>Mythology</span>
+              <span class="era-genre-tag"><span class="era-tag-dot"></span>Dystopian Fiction</span>
+            </div>
+
+            <p class="era-text">
+              Blending <strong>fantasy, horror, mythology, and dystopian fiction</strong>, Era Universe gives writers the creative freedom to explore their own ideas while contributing to a shared overarching narrative. Every story adds a new dimension to the universe, creating endless possibilities for unexpected connections, deeper mysteries, and extraordinary storytelling.
+            </p>
+
+            <p class="era-text">
+              More than a literary series, Era Universe is an evolving creative vision inspired by the possibilities of a multi-author cinematic universe. With ambitions to expand beyond books into <strong>films, web series, anime, and other forms of visual storytelling</strong>, it seeks to bring its interconnected world to life across multiple entertainment platforms.
+            </p>
+
+            <div class="era-punchline-box">
+              <p class="era-punchline">
+                “Era Universe is where individual stories become part of something greater.”
+              </p>
+            </div>
+
+            <p class="era-copyright-note">
+              <em>Era Universe is owned by Era Books Publications, which holds all rights to the universe and its intellectual property.</em>
+            </p>
+
+            <div class="era-action-group">
+              <a href="#featured" class="btn btn-crimson era-btn">
+                <span class="ctc-pulse-beacon beacon-crimson" aria-hidden="true"></span>
+                <svg class="svg-icon-btn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path>
+                  <path d="M6 6h10"></path>
+                  <path d="M6 10h10"></path>
+                </svg>
+                Explore Jahanna in Era Universe
+              </a>
+              <a href="#contact" class="btn btn-outline-white era-btn">
+                <svg class="svg-icon-btn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+                Collaborate / Enquire
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 5: GET IN TOUCH ==================== -->
+    <section class="contact-section" id="contact">
+      <div class="contact-container">
+        <!-- Left: Contact Header & CTA -->
+        <div class="contact-intro">
+          <span class="eyebrow-text">GET IN TOUCH</span>
+          <h2 class="contact-title">Let's Talk Stories.</h2>
+          <p class="contact-subtext">For enquiries, collaborations or just to say hello.</p>
+          <div class="contact-action-group">
+            <a href="mailto:shinuvjmd@gmail.com" class="btn btn-crimson contact-mail-btn" id="btnDirectMail"
+              aria-label="Send email to shinuvjmd@gmail.com">
+              <span class="ctc-pulse-beacon beacon-crimson" aria-hidden="true"></span>
+              <svg class="svg-icon-btn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              <span>shinuvjmd@gmail.com</span>
+            </a>
+            <button class="btn btn-outline" id="btnOpenContact">
+              <span>SEND A MESSAGE</span>
+              <span class="btn-arrow">→</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right: Castle Space (Rendered by UI BG) -->
+        <div class="contact-visual" aria-hidden="true"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-logo">SHINU M. S.</div>
+
+      <nav class="footer-nav">
+        <a href="#hero">Home</a>
+        <a href="#featured">Jahanna 1</a>
+        <a href="#jahanna2">Jahanna 2</a>
+        <a href="#about">About</a>
+        <a href="#author-note">Author's Note</a>
+        <a href="#era-universe">Era Universe</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer-right">
+        <div class="footer-socials">
+          <a href="mailto:shinuvjmd@gmail.com" class="footer-social-icon" aria-label="Email Shinu M. S.">
+            <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/shinu.ms_?utm_source=ig_web_button_share_sheet&cplk=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer"
+            class="footer-social-icon" aria-label="Instagram">
+            <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/share/1DfbTvHVUc/" target="_blank" rel="noopener noreferrer"
+            class="footer-social-icon" aria-label="Facebook">
+            <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+          <a href="https://www.goodreads.com" target="_blank" rel="noopener noreferrer"
+            class="footer-social-icon goodreads-icon" aria-label="Goodreads">
+            <span>g</span>
+          </a>
+        </div>
+        <div class="footer-meta">
+          <div class="footer-copyright">
+            © 2025 Shinu M. S. All rights reserved.
+          </div>
+          <div class="footer-developer">
+            Developed By <a href="https://www.instagram.com/nitin_tinlo/" target="_blank" rel="noopener noreferrer" class="footer-dev-link">Nithinkumar Ks</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== INTERACTIVE MODALS ==================== -->
+  <!-- 1. Explore Book Modal -->
+  <div class="modal-overlay" id="bookModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close" id="closeBookModal" aria-label="Close dialog">&times;</button>
+      <div class="modal-body book-modal-content">
+        <div class="modal-book-preview">
+          <img src="UI BG/Jahanna_ The Rise of Martha Book Mockup.png" alt="Jahanna Cover" class="modal-book-img">
+        </div>
+        <div class="modal-book-info">
+          <span class="eyebrow-text">THE ERA UNIVERSE • BOOK I</span>
+          <h2 class="modal-title">JAHANNA: THE RISE OF MARTHA</h2>
+          <p class="modal-tagline"><em>"A dark fantasy where faith, fear, and evil intertwine."</em></p>
+          <div class="modal-description">
+            <p>A devil who descended upon Earth 1,200 years after Christ. A devoted worshipper who became the first to praise him on this soil. And a forbidden book that holds the power to turn its keeper into something far more sinister than a man.</p>
+            
+            <p>After gifting his worshipper a book inscribed with their shared history and deeds, the Devil proclaimed:</p>
+            
+            <blockquote class="modal-proclamation">
+              “<strong>The birthplace of all sins is this book.<br>
+              He who possesses it shall become wealthy.<br>
+              He who worships it shall become renowned.<br>
+              But he who wields its power shall become the Devil himself.</strong>”
+            </blockquote>
+
+            <p>As ancient mysteries unfold and darkness rises, the boundaries between faith and fear, truth and illusion, begin to dissolve. What begins as a tale of devotion descends into a world where every secret carries a price and every act of power leaves a mark.</p>
+
+            <p>Some books preserve history. Some reveal forbidden truths. And some were never meant to be opened.</p>
+
+            <p class="modal-highlight-line"><strong>Every rise has a secret. Every secret has a price.</strong></p>
+
+            <p class="modal-tagline-footer"><em>JAHANNA — Where faith becomes obsession, and evil finds its scripture.</em></p>
+          </div>
+          <div class="modal-meta-grid">
+            <div><strong>Language:</strong> Malayalam & English</div>
+            <div><strong>Publisher:</strong> Era Universe (EU)</div>
+            <div><strong>Edition:</strong> 6th Revised Edition</div>
+            <div><strong>Format:</strong> Hardcover / Paperback</div>
+          </div>
+          <div class="modal-buttons">
+            <a href="https://www.bookbangtheory.co.in/product/jahanna-the-rise-of-martha-pre-booking/" target="_blank" rel="noopener noreferrer"
+              class="btn btn-crimson">
+              <span>Buy Book Now</span>
+              <span class="btn-arrow-diag">↗</span>
+            </a>
+            <a href="https://www.storytel.com/tv/books/jahanna-12840825" target="_blank" rel="noopener noreferrer"
+              class="btn btn-outline">
+              <span>Listen on Storytel</span>
+              <span class="btn-arrow-diag">↗</span>
+            </a>
+            <a href="https://www.goodreads.com" target="_blank" rel="noopener noreferrer"
+              class="btn btn-outline">
+              <span>Goodreads ↗</span>
+            </a>
+            <button class="btn btn-outline" id="modalOrderBtn">Order Collector's Copy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 1B. Explore Jahanna 2 Modal -->
+  <div class="modal-overlay" id="book2Modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close" id="closeBook2Modal" aria-label="Close dialog">&times;</button>
+      <div class="modal-body book-modal-content">
+        <div class="modal-book-preview">
+          <img src="UI BG/Jahanna – Life of Evil_ Gothic Book Cover.png" alt="Jahanna 2: Life of Evil Cover"
+            class="modal-book-img">
+        </div>
+        <div class="modal-book-info">
+          <span class="eyebrow-text">THE ERA UNIVERSE • BOOK II • CHRONICLE OF EVIL</span>
+          <h2 class="modal-title">JAHANNA 2: LIFE OF EVIL</h2>
+          <p class="modal-tagline"><em>"When ancient evil awakens, even faith becomes a weapon."</em></p>
+          <div class="modal-description">
+            <p>Following the monumental events of <em>The Rise of Martha</em>, an ancient corruption buried beneath the roots of the Era Universe begins its reckoning.</p>
+            <p>In <em>Jahanna 2: Life of Evil</em>, the boundaries between faith and fanaticism, justice and vengeance, and salvation and damnation begin to crumble. As long-buried secrets rise from the depths of history, ancient forces awaken, loyalties fracture, and the consequences of forgotten sins threaten to consume everything in their path.</p>
+            <p>In a world where belief can become a curse and righteousness can conceal the darkest intentions, the struggle between good and evil is no longer a battle fought on opposing sides. It is a war within the very souls of those who dare to shape destiny.</p>
+            <p>Dark, haunting, and relentless, <em>Jahanna 2: Life of Evil</em> expands the mythology of the Era Universe into a terrifying exploration of corruption, betrayal, faith, and vengeance — where every revelation carries a price, and every choice brings the world closer to its reckoning.</p>
+            <p class="modal-highlight-line" style="margin-top: 14px;">
+              <strong>Evil is not always born in darkness. Sometimes, it is what survives the light.</strong>
+            </p>
+          </div>
+          <div class="modal-meta-grid">
+            <div><strong>Series:</strong> The Era Universe (Volume II)</div>
+            <div><strong>Language:</strong> Malayalam & English</div>
+            <div><strong>Format:</strong> Deluxe Hardcover / E-Book</div>
+            <div><strong>Status:</strong> Pre-Order / Advance Reserve</div>
+          </div>
+          <div class="modal-buttons">
+            <a href="https://wa.me/918848392959?text=Hello%20Shinu%2C%20I%20would%20like%20to%20pre-order%20a%20collector's%20edition%20copy%20of%20Jahanna%202%3A%20Life%20of%20Evil." target="_blank" rel="noopener noreferrer" class="btn btn-crimson btn-ctc-whatsapp-crimson" id="modalOrderBook2Btn">
+              <span class="ctc-pulse-beacon" aria-hidden="true"></span>
+              <span>Pre-Order Collector's Edition ↗</span>
+            </a>
+            <a href="https://www.goodreads.com" target="_blank" rel="noopener noreferrer"
+              class="btn btn-outline">Add to Goodreads</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Author Bio Modal ("Know More") -->
+  <div class="modal-overlay" id="authorModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close" id="closeAuthorModal" aria-label="Close dialog">&times;</button>
+      <div class="modal-body author-modal-content">
+        <div class="modal-author-sidebar">
+          <img src="UI BG/Auther Profile picture.png" alt="Shinu M. S." class="modal-author-img">
+          <div class="author-keywords">
+            <span>Ideas</span> • <span>Belief</span> • <span>Fear</span> • <span>Stories</span>
+          </div>
+        </div>
+        <div class="modal-author-info">
+          <span class="eyebrow-text">BIOGRAPHY</span>
+          <h2 class="modal-title">Shinu M. S.</h2>
+          <p class="author-role">Novelist & Creator of the Era Universe</p>
+          <div class="modal-description">
+            <p>Shinu M. S. is a visionary storyteller known for crafting psychological and supernatural tales woven into
+              rich cultural mythos. With <em>Jahanna: The Rise of Martha</em>, he inaugurated the Era Universe,
+              captivating readers with immersive suspense and philosophical depths.</p>
+            <p>His writing delves into the fragile line separating sacred devotion from primal fear, creating layered
+              narratives designed to linger long after the final chapter is closed.</p>
+            <blockquote class="author-quote">"Writing is not merely about constructing worlds; it is about uncovering
+              the secrets the dark is keeping from the light."</blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Contact / Send a Message Modal -->
+  <div class="modal-overlay" id="contactModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close" id="closeContactModal" aria-label="Close dialog">&times;</button>
+      <div class="modal-body contact-modal-content">
+        <span class="eyebrow-text">GET IN TOUCH</span>
+        <h2 class="modal-title">Send a Message to Shinu M. S.</h2>
+        <p class="modal-subtitle">For literary enquiries, speaking engagements, or direct correspondence via <a href="mailto:shinuvjmd@gmail.com" class="crimson-inline-link">shinuvjmd@gmail.com</a>.</p>
+
+        <form class="contact-form" id="contactForm" action="mailto:shinuvjmd@gmail.com" method="POST" enctype="text/plain">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="senderName">Your Name</label>
+              <input type="text" id="senderName" name="name" required placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+              <label for="senderEmail">Email Address</label>
+              <input type="email" id="senderEmail" name="email" required placeholder="name@domain.com">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="senderSubject">Subject</label>
+            <input type="text" id="senderSubject" name="subject" required
+              placeholder="e.g. Literary Query / Book Discussion">
+          </div>
+          <div class="form-group">
+            <label for="senderMessage">Message</label>
+            <textarea id="senderMessage" name="message" rows="5" required
+              placeholder="Write your message here..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-crimson btn-block">
+            <span>TRANSMIT MESSAGE</span>
+            <span class="btn-arrow">→</span>
+          </button>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <div class="success-icon">✓</div>
+          <h3>Message Ready for Dispatch</h3>
+          <p id="successNotice">Drafting email to <strong>shinuvjmd@gmail.com</strong>...</p>
+          <div class="form-success-actions" id="successActions">
+            <a href="mailto:shinuvjmd@gmail.com" id="directSendMailto" class="btn btn-crimson btn-sm">
+              <span>Send via Email Client</span>
+              <span class="btn-arrow">↗</span>
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shinuvjmd@gmail.com" id="directSendGmail" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+              <span>Open in Web Gmail</span>
+              <span class="btn-arrow-diag">↗</span>
+            </a>
+          </div>
+          <p class="success-footnote">If your mail app didn't launch automatically, tap either button above.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Search Modal Overlay -->
+  <div class="modal-overlay" id="searchModal" aria-hidden="true">
+    <div class="modal-dialog search-dialog">
+      <button class="modal-close" id="closeSearchModal" aria-label="Close search">&times;</button>
+      <div class="search-modal-content">
+        <span class="eyebrow-text">EXPLORE THE ARCHIVES</span>
+        <div class="search-input-wrap">
+          <input type="text" id="siteSearchInput" placeholder="Search stories, editions, lore, or characters..."
+            autofocus>
+          <button class="search-btn" id="searchSubmitBtn">Search</button>
+        </div>
+        <div class="search-suggestions">
+          <span>Popular:</span>
+          <button class="suggestion-tag">Jahanna 2</button>
+          <button class="suggestion-tag">Life of Evil</button>
+          <button class="suggestion-tag">Jahanna</button>
+          <button class="suggestion-tag">The Rise of Martha</button>
+          <button class="suggestion-tag">Era Universe</button>
+        </div>
+        <div class="search-results" id="searchResults"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
